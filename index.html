@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="calculator">
+      <div class="display">{{currentDisplayValue || '0'}}</div>
+      <button @click="clear" class="btn">C</button>
+      <button class="btn"></button>
+      <button @click="percent" class="btn">%</button>
+      <button @click="divide" class="btn operator">÷</button>
+      <button @click="numeric(7)" class="btn">7</button>
+      <button @click="numeric(8)" class="btn">8</button>
+      <button @click="numeric(9)" class="btn">9</button>
+      <button @click="multiply" class="btn operator">x</button>
+      <button @click="numeric(4)" class="btn">4</button>
+      <button @click="numeric(5)" class="btn">5</button>
+      <button @click="numeric(6)" class="btn">6</button>
+      <button @click="subtract" class="btn operator">-</button>
+      <button @click="numeric(1)" class="btn">1</button>
+      <button @click="numeric(2)" class="btn">2</button>
+      <button @click="numeric(3)" class="btn">3</button>
+      <button @click="add" class="btn operator">+</button>
+      <button @click="numeric(0)" class="btn zero">0</button>
+      <button @click="dot" class="btn">.</button>
+      <button @click="equal" class="btn operator">=</button>
+    </section>
+  </body>
+</html>
